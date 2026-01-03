@@ -1,19 +1,21 @@
-// app/sitemap.js - Dynamic sitemap generation for Next.js
+// app/sitemap.js
+export const dynamic = "force-static";
 
 export default function sitemap() {
-  const baseUrl = "https://www.skenterprise.com"; // Replace with your actual domain
+  const baseUrl = "https://www.skenterprise.com";
 
-  // Static pages
+  // Use a fixed date or build-time date
+  const lastModified = new Date().toISOString();
+
   const routes = ["", "/about", "/services", "/gallery", "/contact"].map(
     (route) => ({
       url: `${baseUrl}${route}`,
-      lastModified: new Date().toISOString(),
+      lastModified: lastModified,
       changeFrequency: route === "" ? "weekly" : "monthly",
       priority: route === "" ? 1.0 : 0.8,
     })
   );
 
-  // Service pages for better SEO
   const servicePages = [
     "/services/false-ceiling",
     "/services/pop-work",
@@ -21,12 +23,11 @@ export default function sitemap() {
     "/services/led-lighting",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date().toISOString(),
+    lastModified: lastModified,
     changeFrequency: "monthly",
     priority: 0.7,
   }));
 
-  // Location pages for local SEO
   const locationPages = [
     "/ahmedabad",
     "/ahmedabad/satellite",
@@ -35,7 +36,7 @@ export default function sitemap() {
     "/gujarat",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date().toISOString(),
+    lastModified: lastModified,
     changeFrequency: "monthly",
     priority: 0.6,
   }));

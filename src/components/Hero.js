@@ -27,7 +27,7 @@ const Hero = () => {
 
             <p className="text-lg md:text-xl text-gray-600 mb-6">
               Looking for <strong>false ceiling near me</strong>? SK Enterprise
-              is Ahmedabad's leading contractor for{" "}
+              is Ahmedabad&apos;s leading contractor for{" "}
               <strong>false ceiling installation</strong>, POP work, and gypsum
               solutions. We specialize in residential and commercial spaces
               across Gujarat, delivering precision craftsmanship with premium

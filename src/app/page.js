@@ -88,11 +88,11 @@ export default function Home() {
           tailored to your specific needs.
         </p>
         <p>
-          Looking for "false ceiling near me" in Ahmedabad? We serve all areas
-          including Satellite, Bopal, Prahlad Nagar, Vastrapur, Maninagar,
-          Naranpura, and surrounding regions. With 15+ years of experience and
-          500+ completed projects, we're your trusted partner for quality
-          ceiling solutions.
+          Looking for &quot;false ceiling near me&quot; in Ahmedabad? We serve
+          all areas including Satellite, Bopal, Prahlad Nagar, Vastrapur,
+          Maninagar, Naranpura, and surrounding regions. With 15+ years of
+          experience and 500+ completed projects, we&apos;re your trusted
+          partner for quality ceiling solutions.
         </p>
 
         <h3>Why Choose SK Enterprise for False Ceiling in Ahmedabad?</h3>
