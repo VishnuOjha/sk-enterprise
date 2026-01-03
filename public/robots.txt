@@ -1,26 +1,21 @@
 # robots.txt for SK Enterprise
-# Allow all search engines to crawl the site
+# https://shrikishanenterprise.com
 
+# Allow all search engines
 User-agent: *
 Allow: /
 
-# Disallow admin and private areas
-Disallow: /admin/
+# Block admin and API routes
 Disallow: /api/
 Disallow: /_next/
+Disallow: /admin/
+
+# Allow specific important paths (optional)
+Allow: /images/
+Allow: /styles/
 
 # Sitemap location
-Sitemap: User-agent: *
-Allow: /
-
 Sitemap: https://shrikishanenterprise.com/sitemap.xml
 
-# Specific bot instructions
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Slurp
-Allow: /
+# Host (optional - helps with canonicalization)
+Host: https://shrikishanenterprise.com
