@@ -1,0 +1,23 @@
+# robots.txt for SK Enterprise
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+
+# Sitemap location
+Sitemap: https://www.skenterprise.com/sitemap.xml
+
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

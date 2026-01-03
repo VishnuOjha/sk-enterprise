@@ -104,25 +104,7 @@ const Gallery = () => {
           </p>
         </div>
 
-        {/* Upload Button */}
-        <div className="mb-8 flex justify-center">
-          <label
-            htmlFor="file-upload"
-            className="btn-primary cursor-pointer inline-flex items-center"
-          >
-            <FaUpload className="mr-2" />
-            {isUploading ? 'Uploading...' : 'Upload Project Images'}
-          </label>
-          <input
-            id="file-upload"
-            type="file"
-            accept="image/*"
-            multiple
-            onChange={handleFileUpload}
-            className="hidden"
-            disabled={isUploading}
-          />
-        </div>
+        
 
         {/* Gallery Grid */}
         {images.length > 0 ? (
