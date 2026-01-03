@@ -2,7 +2,7 @@
 export const dynamic = "force-static";
 
 export default function sitemap() {
-  const baseUrl = "https://shrikishanenterprise.com";;
+  const baseUrl = "https://shrikishanenterprise.com";
 
   // Use a fixed date or build-time date
   const lastModified = new Date().toISOString();
